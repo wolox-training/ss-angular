@@ -1,0 +1,94 @@
+.author-book {
+  color: $detail-grey;
+  font-size: $text-detail;
+  font-weight: 400;
+}
+
+.books-container {
+  margin-top: 65px;
+  width: 163px;
+}
+
+.button-filter {
+  background: $detail-green;
+  width: 38px;
+}
+
+.books-image {
+  height: 182px;
+  max-height: 100%;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.book-info {
+  margin: 11px auto;
+  width: 128px;
+}
+
+.books-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  height: calc(100vh - 80px);
+  margin: 0 auto;
+  width: 722px;
+}
+
+.filter {
+  background-color: $background-input;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: $text-input;
+  height: 38px;
+  padding: 0 12px;
+  width: 238px;
+}
+
+.filter-container {
+  display: flex;
+  margin: 65px 16px 0;
+}
+
+.image-container {
+  background-color: $image-container;
+  display: block;
+  margin: 0 auto;
+  width: 128px;
+}
+
+.icon-search {
+  color: $color-white;
+  font-size: $text-icons;
+}
+
+.image-default {
+  display: block;
+  height: 182px;
+  margin: 0 auto;
+  width: 70%;  
+}
+
+.filter-select {
+  background-color: transparent;
+  color: $input-color;
+}
+
+.select-container {
+  background-color: $background-input;
+  background-image: url(../assets/arrow-down.png);
+  background-repeat: no-repeat;
+  background-position: right .7em top 50%, 0 0;
+  background-size: 15px;
+  margin-right: 20px;
+}
+
+.title-book {
+  font-size: $text-input;
+  font-weight: bold;
+}

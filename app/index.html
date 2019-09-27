@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" ng-app="bookscatApp">
+  <head>
+    <meta charset="utf-8">
+    <title>My HTML File</title>
+    <link rel="stylesheet" href="styles/app.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4218742eb7.js" crossorigin="anonymous"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-controller="BooksListController">
+    <div class="container">
+      <div class="filter-container">
+        <div class="select-container">
+          <select class="filter-select filter" ng-model="filter" ng-options="item.key for item in params track by item.value" >
+            <option value="">Selecione el filtro...</option>
+          </select>
+        </div>
+        <input class="filter" ng-model="query" placeholder="Buscar..."/>
+        <button class="button-filter"><i class="fas fa-search icon-search"></i></button>
+      </div>
+      <ul class="books-list">
+        <li ng-repeat="book in books | filter: getFilter()" class="books-container">
+          <div class="image-container">
+            <img ng-src="{{book.image_url ? book.image_url : imageUrl}}" alt="{{book.title}}" ng-class="book.image_url  ? 'books-image' : 'image-default'"/>
+          </div>
+          <div class="book-info">
+            <p class="title-book">{{book.title}}</p>
+            <span class="author-book">{{book.author}}</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
