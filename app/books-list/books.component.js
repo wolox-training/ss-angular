@@ -1,9 +1,9 @@
 angular.
-module('home').
-component('home', {
-  templateUrl: 'home/home.template.html', 
-  controller: [ '$http', '$scope', function HomeController($http, $scope) {
-    let self = this;
+module('bookscatApp').
+component('books', {
+  templateUrl: 'books-list/books.template.html', 
+  controller: [ '$http', '$scope', function BooksController($http, $scope) {
+    const self = this;
     this.imageUrl = '../assets/default_book.svg';
 
     $http.get('books/books.json').then(function(response) {
