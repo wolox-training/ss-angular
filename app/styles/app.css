@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+label,
+input,
+a,
+button,
+select,
+textarea {
+  color: #000;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+h1:focus,
+h2:focus,
+h3:focus,
+h4:focus,
+h5:focus,
+h6:focus,
+p:focus,
+span:focus,
+label:focus,
+input:focus,
+a:focus,
+button:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+input,
+select,
+textarea,
+button {
+  border: 0;
+  border-radius: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+a:focus, a:active, a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+::placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+* {
+  font-family: "Roboto";
+}
+
+.author-book {
+  color: #4a4a4a;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.books-container {
+  margin-top: 65px;
+  width: 163px;
+}
+
+.button-filter {
+  background: #BED23C;
+  width: 38px;
+}
+
+.books-image {
+  height: 182px;
+  max-height: 100%;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.book-info {
+  margin: 11px auto;
+  width: 128px;
+}
+
+.books-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  height: calc(100vh - 80px);
+  margin: 0 auto;
+  width: 723px;
+}
+
+.filter {
+  background-color: #F4F4F4;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 14px;
+  height: 38px;
+  padding: 0 12px;
+  width: 238px;
+}
+
+.filter-container {
+  display: flex;
+  margin: 65px 16px 0;
+}
+
+.image-container {
+  background-color: #d8d8d8;
+  display: block;
+  margin: 0 auto;
+  width: 128px;
+}
+
+.icon-search {
+  color: #FFF;
+  font-size: 20px;
+}
+
+.image-default {
+  display: block;
+  height: 182px;
+  margin: 0 auto;
+  width: 75px;
+}
+
+.filter-select {
+  background-color: transparent;
+  color: #9b9b9b;
+}
+
+.select-container {
+  background-color: #F4F4F4;
+  background-image: url(../assets/arrow-down.png);
+  background-repeat: no-repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 15px;
+  margin-right: 20px;
+}
+
+.title-book {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=app.css.map */
