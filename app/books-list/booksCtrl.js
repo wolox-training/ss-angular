@@ -3,12 +3,9 @@ module('bookscatApp').
 component('books', {
   templateUrl: 'books-list/books.html', 
   controller: [ '$http', '$scope', function BooksController($http, $scope) {
-    const self = this;
     this.imageUrl = '../assets/default_book.svg';
 
-    $http.get('books/books.json').then(function(response) {
-      self.books = response.data;
-    });
+    $http.get('books/books.json').then(response => this.books = response.data);
 
     this.params = [
       {value: 'title', key: 'Nombre'},
