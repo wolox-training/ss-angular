@@ -1,18 +1,15 @@
 var bookscatApp = angular.module('bookscatApp', ['ui.router']);
 
-bookscatApp.config(function($stateProvider) {
-  var booksState = {
-    name: 'books',
+bookscatApp.config($stateProvider => {
+  $stateProvider
+  .state('booksState',{
     url: '/',
     component: 'books'
-  }
+  });
 
-  var detailState = {
-    name: 'detail',
+  $stateProvider
+  .state('detailState',{
     url: '/books/{bookId}',
     component: 'detail'
-  }
-
-  $stateProvider.state(booksState);
-  $stateProvider.state(detailState);
+  });
 });

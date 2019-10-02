@@ -1,8 +1,8 @@
-<a ui-sref="books" class="button-back"> < Volver</a>
+<a ui-sref="booksState" class="button-back"> < Volver</a>
 <div class="container-detail">
   <div class="container-info">
     <div class="image-detail">
-      <img ng-class="$ctrl.detail.image_url  ? 'image' : 'default'" ng-src="{{$ctrl.detail.image_url ? $ctrl.detail.image_url : $ctrl.imageUrl}}"/>
+      <img alt="book-image" ng-class="$ctrl.detail.image_url  ? 'image' : 'default'" ng-src="{{$ctrl.detail.image_url ? $ctrl.detail.image_url : $ctrl.imageUrl}}"/>
     </div>
     <div class="info-detail">
       <h1 class="text-info title">{{$ctrl.detail.title}}</h1>
@@ -21,16 +21,16 @@
   <div class="container-sugestions">
     <h1 class="text-info title-sugestions">Sugerencias</h1>
     <div class="images-sugestions">
-      <div class="container-images"><img class="image-sugestion" ng-src="{{$ctrl.imageUrl}}"/></div>
-      <div class="container-images"><img class="image-sugestion" ng-src="{{$ctrl.imageUrl}}"/></div>
-      <div class="container-images"><img class="image-sugestion" ng-src="{{$ctrl.imageUrl}}"/></div>
-      <div class="container-images"><img class="image-sugestion" ng-src="{{$ctrl.imageUrl}}"/></div>
+      <div class="container-images"><img alt="sugestion-image" class="image-sugestion" ng-src="{{$ctrl.imageUrl}}"/></div>
+      <div class="container-images"><img alt="sugestion-image" class="image-sugestion" ng-src="{{$ctrl.imageUrl}}"/></div>
+      <div class="container-images"><img alt="sugestion-image" class="image-sugestion" ng-src="{{$ctrl.imageUrl}}"/></div>
+      <div class="container-images"><img alt="sugestion-image" class="image-sugestion" ng-src="{{$ctrl.imageUrl}}"/></div>
     </div>
   </div>
   <div class="container-comments">
     <h1 class="text-info title-sugestions">Comentarios</h1>
     <div class="coment-inputs">
-      <img class="image-form" src="../assets/speaker.jpg"/>
+      <img alt="user-image" class="image-form" src="../assets/speaker.jpg"/>
       <div class="container-form">
         <h3 class="add-comment">Agregar comentario</h3>
         <textarea class="input-form"></textarea>
@@ -40,7 +40,7 @@
     <div class="comments-list">
       <ul>
         <li class="coment-inputs">
-          <img class="image-form" src="../assets/speaker.jpg"/>
+          <img alt="user-image" class="image-form" src="../assets/speaker.jpg"/>
           <div class="container-form">
             <h3 class="add-comment">Kimberly Carter</h3>
             <p class="comment-date">xx/xx/xx</p>
@@ -52,7 +52,7 @@
           </div>
         </li>
         <li class="coment-inputs">
-            <img class="image-form" src="../assets/speaker.jpg"/>
+            <img alt="user-image" class="image-form" src="../assets/speaker.jpg"/>
             <div class="container-form">
               <h3 class="add-comment">Kimberly Carter</h3>
               <p class="comment-date">xx/xx/xx</p>

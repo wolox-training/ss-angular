@@ -24,7 +24,7 @@
 }
 
 .button-back {
-  color: #4a4a4a;
+  color: $detail-grey;
   font-size: $text-detail;
   left: 35px;
   position: absolute;
@@ -99,13 +99,13 @@
 .image {
   height: 100%;
   width: 100%;
+  min-width: 192px;
 }
 
 .image-detail {
   background-color: $image-container;
   height: 272px;
   min-width: 192px;
-  width: 192px;
 }
 
 .image-form {
@@ -138,13 +138,13 @@
   height: 272px;
   justify-content: space-between;
   margin-left: 20px;
+  width: 600px;
 }
 
 .input-form {
   border: 1px solid $detail-grey;
   height: 75px;
   margin-top: 15px;
-  max-width: 100%;
   padding: 10px;
   width: 100%;  
 }

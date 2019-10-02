@@ -1,13 +1,12 @@
 angular.
 module('bookscatApp').
 component('detail', {
-  templateUrl: 'book-detail/detail.template.html', 
+  templateUrl: 'book-detail/detail.html', 
   controller: function DetailController($http, $stateParams) {
-    const self = this;
     this.imageUrl = '../assets/default_book.svg';
-    $http.get('books/books.json').then(function(response) {
+    $http.get('books/books.json').then(response => {
       const books = response.data;
-      self.detail = books.find(book => book.id == $stateParams.bookId)
+      this.detail = books.find(book => book.id == $stateParams.bookId)
     });
   }
 })

@@ -1,7 +1,7 @@
 angular.
 module('bookscatApp').
 component('books', {
-  templateUrl: 'books-list/books.template.html', 
+  templateUrl: 'books-list/books.html', 
   controller: [ '$http', '$scope', function BooksController($http, $scope) {
     const self = this;
     this.imageUrl = '../assets/default_book.svg';

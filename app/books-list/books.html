@@ -10,9 +10,9 @@
   </div>
   <ul class="books-list">
     <li ng-repeat="book in $ctrl.books | filter: $ctrl.getFilter()" class="books-container">
-      <a ui-sref="detail({ bookId: book.id })">
+      <a ui-sref="detailState({ bookId: book.id })">
         <div class="image-container">
-          <img ng-src="{{book.image_url ? book.image_url : $ctrl.imageUrl}}" alt="{{book.title}}" ng-class="book.image_url  ? 'books-image' : 'image-default'"/>
+          <img alt="min-book-image" ng-src="{{book.image_url ? book.image_url : $ctrl.imageUrl}}" alt="{{book.title}}" ng-class="book.image_url  ? 'books-image' : 'image-default'"/>
         </div>
         <div class="book-info">
           <p class="title-book">{{book.title}}</p>
