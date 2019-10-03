@@ -1,4 +1,7 @@
-var bookscatApp = angular.module('bookscatApp', ['ui.router']);
+var bookscatApp = angular.module('bookscatApp', [
+  'ui.router',
+  'services'
+]);
 
 bookscatApp.config($stateProvider => {
   $stateProvider
