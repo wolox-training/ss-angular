@@ -1,0 +1,165 @@
+.add-comment {
+  display: block;
+  font-size: $text-input;
+  font-weight: bold;
+}
+
+.btn-form {
+  background: $detail-green;
+  color: $color-white;
+  font-size: $text-info;
+  font-weight: bold;
+  height: 38px;
+  margin-top: 15px;
+  width: 192px;
+}
+
+.btn-rent {
+  background: $detail-blue;
+  color: $color-white;
+  font-size: $text-icons;
+  font-weight: bold;
+  padding: 7px 0;
+  width: 192px;
+}
+
+.button-back {
+  color: $detail-grey;
+  font-size: $text-detail;
+  left: 35px;
+  position: absolute;
+  top: 35px;
+}
+
+.comment-content {
+  color: $detail-description;
+}
+
+.comment-date {
+  color: $detail-grey;
+  font-size: $text-detail;
+  margin-bottom: 10px;
+}
+
+.coment-inputs {
+  display: flex;
+  justify-content: space-around;
+  margin: 22px 0 0 33px;
+}
+
+.comment-list {
+  margin-top: 25px;
+}
+
+.container-comments {
+  margin: 40px 0;
+}
+
+.container-detail {
+  margin: 0 auto;
+  min-height: calc(100vh - 80px);
+  width: 800px;
+}
+
+.container-form {
+  width: 667px;
+}
+
+.container-images {
+  background: $image-container;
+  height: 124px;
+  margin-left: 50px;
+  width: 87px;
+}
+
+.container-info {
+  display: flex;
+  padding-bottom: 36px;
+  margin-top: 100px;
+}
+
+.container-sugestions {
+  border-bottom: 1px solid $detail-blue;
+  border-top: 1px solid $detail-blue;
+  padding: 31px 0;
+}
+
+.default {
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  width: 111px;
+}
+
+.description {
+  color: $detail-description;
+  font-size: $text-input;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  min-width: 192px;
+}
+
+.image-detail {
+  background-color: $image-container;
+  height: 272px;
+  min-width: 192px;
+}
+
+.image-form {
+  background-color: $image-container;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.images-sugestions {
+  display: flex;
+  margin-top: 16px;
+}
+
+.image-sugestion {
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  width: 60px;
+}
+
+.info {
+  color: $detail-grey;
+  font-size: $text-info;
+}
+
+.info-detail {
+  display: flex;
+  flex-direction: column;
+  height: 272px;
+  justify-content: space-between;
+  margin-left: 20px;
+  width: 600px;
+}
+
+.input-form {
+  border: 1px solid $detail-grey;
+  height: 75px;
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;  
+}
+
+.text-info {
+  display: block;
+}
+
+.title {
+  font-size: $text-icons;
+  font-weight: bold;
+}
+
+.title-sugestions {
+  font-size: $text-icons;
+  color: $detail-green;
+  font-weight: bold;
+}
