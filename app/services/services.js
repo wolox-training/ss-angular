@@ -1,1 +1,4 @@
-angular.module('services', ['services.books']);
+angular.module('services', [
+  'services.books',
+  'services.auth'
+]);

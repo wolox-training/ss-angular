@@ -2,9 +2,12 @@ angular.
 module('bookscatApp').
 component('register', {
   templateUrl: 'register/register.html',
-  controller: ['$scope',function DetailController($scope) {
+  controller: ['Auth', '$location' ,function DetailController(Auth, $location) {
     this.update = (user) => {
-      console.log(user,'estoy haciendo click');
+      const body = {user: {...user, password_conformation: user.password, locale: 'en'}};
+      Auth.save({}, body).$promise.then(response => {
+        !!response.access_token && $location.path("/login")
+      });
     };
   }]
 })

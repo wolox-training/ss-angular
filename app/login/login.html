@@ -1,17 +1,7 @@
 <div class="form-container">
   <form name="form" novalidate class="form">
     <i class="fas fa-user-plus icon-signup"></i>
-    <h1 class="title-form">Registrarse: </h1>
-    <label class="label">Nombre:</label>
-    <input type="text" ng-model="user.first_name" class="input" name="uName" required=""/>
-    <div class="error-container">
-      <p class="text-error" ng-show="form.uName.$touched && form.uName.$error.required">Este campo es requerido.</p>
-    </div>
-    <label class="label">Apellido:</label>
-    <input type="text" ng-model="user.last_name" class="input" name="uLastname" required=""/>
-    <div class="error-container">
-      <p class="text-error" ng-show="form.uLastname.$touched && form.uLastname.$error.required">Este campo es requerido.</p>
-    </div>
+    <h1 class="title-form">Iniciar Sesión: </h1>
     <label class="label">Correo:</label>
     <input type="email" ng-model="user.email" class="input" name="uEmail" required=""/>
     <div class="error-container">

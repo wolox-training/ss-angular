@@ -11,6 +11,12 @@ bookscatApp.config($stateProvider => {
   });
 
   $stateProvider
+  .state('loginState',{
+    url: '/login',
+    component: 'login'
+  });
+
+  $stateProvider
   .state('booksState',{
     url: '/',
     component: 'books'
