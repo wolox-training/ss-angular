@@ -1,10 +1,10 @@
 angular.
 module('bookscatApp').
 component('books', {
+  bindings: { books: '<' },
   templateUrl: 'books-list/books.html', 
-  controller: [ 'Books', '$scope', function BooksController(Books, $scope) {
+  controller: ['$scope', '$transitions', function BooksController($scope) {
     this.imageUrl = '../assets/default_book.svg';
-    this.books = Books.query();
     this.params = [
       {value: 'title', key: 'Nombre'},
       {value: 'author', key: 'Autor'}
