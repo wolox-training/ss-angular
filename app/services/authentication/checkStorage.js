@@ -1,6 +1,6 @@
 angular.
 module('services.auth').
-factory('sessionInjector', () => {
+factory('sessionInjector', ['$rootScope', ($rootScope) => {
   const token = localStorage.getItem('token');
   const sesionInjector = {
     request: (config) => {
@@ -12,4 +12,4 @@ factory('sessionInjector', () => {
     check: !!token
   }
   return sesionInjector;
-});
+}]);

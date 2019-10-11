@@ -21,9 +21,9 @@ bookscatApp.config(($stateProvider) => {
     data: { private: true },
     resolve: {
       books: (Books) => Books.query()
-    },
+    }
   })
-  .state('detailState',{
+  .state('detailState', {
     url: '/books/{bookId}',
     component: 'detail',
     data: { private: true },
@@ -36,15 +36,15 @@ bookscatApp.config(($stateProvider) => {
     }
   });
 }).run(['$transitions', 'sessionInjector', ($transitions, CheckAuth) => {
-  $transitions.onStart({
+  $transitions.onBefore({
     to: true
-  }, (trans) => {
-    const { private } = trans.to().data;
+  }, transition => {
+    const { private } = transition.to().data;
     if(CheckAuth.check && !private) {
-      return trans.router.stateService.target('booksState');
+      return transition.router.stateService.target('booksState');
     };
     if(!CheckAuth.check && private) {
-      return trans.router.stateService.target('loginState');
+      return transition.router.stateService.target('loginState');
     };
     return true;
   });
