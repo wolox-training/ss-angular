@@ -1,0 +1,75 @@
+.btn-form {
+  align-self: center;
+  background-color: $detail-blue;
+  color: $color-white;
+  cursor: pointer;
+  font-size: $text-input;
+  font-weight: normal;
+  height: 38px;
+  margin-top: 60px;
+  text-align: center;
+  width: 178px;
+}
+
+.error-container {
+  height: 20px;
+}
+
+.form {
+  background-color: $color-white;
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  margin: 0 auto;
+  padding: 0 77px;
+  width: 700px;
+}
+
+.form-container {
+  align-items: center;
+  background: $backgroud-auth;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.input {
+  background-color: $background-input;
+  color: $input-color;
+  font-style: italic;
+  font-size: $text-input;
+  height: 38px;
+  padding: 10px;
+}
+
+.icon-signup{
+  align-self: center;
+  color: $detail-green;
+  font-size: 40px;
+  margin-top: 38px;
+}
+
+.input
+.ng-invalid
+.ng-touched {
+  border: 1px solid $detail-red;
+}
+
+.label {
+  color: $detail-grey;
+  font-size: $text-detail;
+  margin: 20px 0 10px;
+}
+
+.text-error {
+  color: $detail-red;
+  font-size: $text-error;
+}
+
+.title-form {
+  align-self: center;
+  color: $detail-grey;
+  font-size: $text-icons;
+  font-weight: bold;
+  margin: 28px 0;
+}

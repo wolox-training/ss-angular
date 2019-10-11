@@ -1,0 +1,35 @@
+<div class="form-container">
+  <form name="form" novalidate class="form">
+    <i class="fas fa-user-plus icon-signup"></i>
+    <h1 class="title-form">Iniciar Sesión: </h1>
+    <label class="label">Correo:</label>
+    <input type="email" ng-model="user.email" class="input" name="uEmail" required=""/>
+    <div class="error-container">
+      <p class="text-error" ng-show="form.uEmail.$touched && form.uEmail.$error.required">Este campo es requerido.</p>
+      <p class="text-error" ng-show="form.uEmail.$touched && form.uEmail.$error.email">This is not a valid email.</p>
+    </div>
+    <label class="label">Contraseña:</label>
+    <input
+      class="input"
+      ng-minlength="8"
+      ng-maxlength="52"
+      type="password"
+      ng-pattern="/^(?:[0-9]+[a-z]|[a-z]+[0-9])[a-z0-9]*$/i"
+      ng-model="user.password"
+      name="uPassword"
+      required=""
+    />
+    <div class="error-container">
+      <p class="text-error" ng-show="form.uPassword.$touched && form.uPassword.$error.required">
+        Este campo es requerido.
+      </p>
+      <p class="text-error" ng-show="form.uPassword.$touched && form.uPassword.$error.minlength || form.uPassword.$error.maxlength">
+        El valor debe estar en un rago de 8 a 52 caracteres.
+      </p>
+      <p class="text-error" ng-show="form.uPassword.$touched && form.uPassword.$error.pattern">
+        El campo debe tener al menos un numero y al menos una letra.
+      </p>
+    </div>
+    <input type="submit" ng-click="$ctrl.update(user)" value="Aceptar" class="btn-form"/>
+  </form>
+</div>

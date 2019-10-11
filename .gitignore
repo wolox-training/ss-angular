@@ -7,4 +7,4 @@ tmp
 .idea
 *.css
 *.map
-.package-lock.json
+package-lock.json

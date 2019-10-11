@@ -2,11 +2,10 @@ angular.
 module('bookscatApp').
 component('detail', {
   templateUrl: 'book-detail/detail.html', 
-  controller: function DetailController($http, $stateParams) {
-    this.imageUrl = '../assets/default_book.svg';
-    $http.get('books/books.json').then(response => {
-      const books = response.data;
-      this.detail = books.find(book => book.id == $stateParams.bookId)
+  controller: ['Books', '$stateParams', function DetailController(Books, $stateParams) {
+    Books.query().$promise.then(book => {
+      this.detail = book.find(book => book.id == $stateParams.bookId);
     });
-  }
+    this.imageUrl = '../assets/default_book.svg';
+  }]
 })
